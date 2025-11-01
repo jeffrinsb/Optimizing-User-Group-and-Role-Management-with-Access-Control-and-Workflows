@@ -1,6 +1,5 @@
 # Optimizing-User-Group-and-Role-Management-with-Access-Control-and-Workflows
 
-# 🧩 Optimizing User, Group, and Role Management with Access Control and Workflows
 
 This project is implemented on the **ServiceNow** platform to automate and optimize user, group, and role management operations.  
 It also integrates **Access Control Lists (ACLs)** and **Flow Designer workflows** to ensure secure, structured, and efficient project management.
@@ -53,27 +52,45 @@ This project leverages **ServiceNow’s automation and access control capabiliti
 - Groups created:
   - **Project Management Team**
   - **Development Team**
+ 
+    <img width="1809" height="790" alt="2 png" src="https://github.com/user-attachments/assets/0ef42086-7f36-4a41-9627-0f2d96a5fc53" />
+
 
 ### **Step 3 – Create Roles**
 - Defined two main roles:
   - `project_manager`
   - `team_member`
 
+  <img width="1809" height="821" alt="3 png" src="https://github.com/user-attachments/assets/31cb450d-e4b3-460b-994d-591ae0e6f1dd" />
+
+
 ### **Step 4 – Assign Roles**
 - **Alice** → `project_manager`, `u_project_table`, `u_task_table`  
 - **Bob** → `team_member`, `u_task_table`
+
+  <img width="1805" height="808" alt="image" src="https://github.com/user-attachments/assets/e21ccaab-5a82-458a-b6ae-9eb9ff2eed25" />
+
 
 ### **Step 5 – Assign Table Access**
 - **Project Table** → accessible by *Project Manager*  
 - **Task Table 2** → accessible by *Project Manager* and *Team Member*
 
+  <img width="1814" height="796" alt="image" src="https://github.com/user-attachments/assets/43d7dd75-42ae-4f77-b3e6-aa2b992971f1" />
+
+
 ### **Step 6 – Create ACL**
 - Configured **4 ACLs** for table and field-level permissions:
   - Gave `team_member` access to **Task Table 2**
   - Provided edit access for **Comment** and **Status** fields
+ 
+    <img width="1810" height="532" alt="image" src="https://github.com/user-attachments/assets/ea020403-64b9-4b6a-9e9c-5fba0fe544e2" />
+
 
 ### **Step 7 – Create Flow in Flow Designer**
 - Created a **Flow** that automatically assigns new **Operation Tickets** to the **Operations Group** upon creation.
+
+  <img width="1814" height="862" alt="image" src="https://github.com/user-attachments/assets/d80db307-5671-4550-a74e-76c6d6d553c9" />
+
 
 ---
 
