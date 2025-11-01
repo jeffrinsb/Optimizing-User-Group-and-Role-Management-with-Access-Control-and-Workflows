@@ -45,6 +45,9 @@ This project leverages **ServiceNow’s automation and access control capabiliti
 - Created two users:
   - **Alice (Project Manager)**
   - **Bob (Team Member)**
+ 
+    ![1 png](https://github.com/user-attachments/assets/0d434e59-45cc-4690-86fa-b2c69ca2c1c9)
+
 
 ### **Step 2 – Create Groups**
 - Groups created:
